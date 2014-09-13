@@ -12,7 +12,7 @@ $(function() {
   $(window).scroll(function(event) {
     var thisScroll = $(this).scrollTop();
     // When at top of page, show menu.
-    if (thisScroll === 0) {
+    if (thisScroll === 0 && !menuIsDisplayed) {
       $('.navbar').css('top', '0').fadeIn('slow');
       $('.navbar').css('background-color', 'transparent')
         .css('color', '#FFFFFF');
@@ -32,6 +32,8 @@ $(function() {
     }
     else {
       $('.navbar').css('top', '-59px');
+      $('.menu-dropdown').css('display', 'none');
+      menuIsDisplayed = false;
     }
     lastScroll = thisScroll;
   });
