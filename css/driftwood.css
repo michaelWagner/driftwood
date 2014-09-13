@@ -119,12 +119,11 @@ p {
 
 .content-wrapper {
   width: 811px;
-  /*width: 80%;*/
   margin: auto;
 }
 
 .frame-1 {
-  background-color: #3093bd; /*#196399;*/
+  background-color: #3093bd;
 }
 
 .frame-1-text {
@@ -186,7 +185,7 @@ p {
   }
 }
 
-@media screen and (max-width: 508px) {
+@media screen and (max-width: 496px) {
   .menu-dropdown {
     top: 8px;
   }
@@ -194,28 +193,23 @@ p {
 
 @media screen and (max-width: 407px) {
   .content-wrapper {
-    /*width: 386px;*/
     width: 79%;
   }
 
   .frame-2-content {
-    /*width: 320px;*/
     width: 100%;
     position: relative;
     left: 1%;
   }
 
-  /*TODO fix menu-dropdown*/
-}
-
-@media screen and (max-width: 363px) {
   .menu-dropdown {
     top: 8px;
   }
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 363px) {
   .menu-dropdown {
-    width: 130px;
+    top: -26px;
+    left: 0;
   }
 }
