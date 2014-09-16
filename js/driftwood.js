@@ -50,7 +50,7 @@ $(function() {
     $('.navbar').css('top', '0');
   }, function () {
     if (lastScroll === 0) {
-      $('.navbar').css('background-color', '#3093bd')
+      $('.navbar').css('background-color', 'transparent')
         .css('color', '#FFFFFF').fadeIn('slow');
       $('.menu').css('color', '#FFFFFF');
       $('.menu-bars li').css('background-color', '#FFFFFF')

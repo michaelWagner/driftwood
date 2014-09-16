@@ -124,14 +124,31 @@ p {
 
 .frame-1 {
   background-color: #3093bd;
+  height: 616px;
 }
 
 .frame-1-text {
-
   text-align: center;
   font-size: 2.7em;
-  padding-top: 25%;
+  margin-top: -503px;
   font-weight: bold;
+  background-color: transparent;
+  z-index: 10000;
+  width: 100%;
+}
+
+.frame-2-short-text {
+  display: none;
+  margin: 133px 9% -133px;
+  height: 0;
+  width: 92%;
+}
+
+.frame-2-short-text-2 {
+  display: none;
+  margin: 277px 9%;
+  height: 0;
+  width: 92%;
 }
 
 .frame-2 {
@@ -143,7 +160,7 @@ p {
   width: 327px;
   height: 211px;
   position: relative;
-  background-color: black;
+  background-color: transparent;
 }
 
 .frame-2-text {
@@ -160,7 +177,7 @@ p {
 
 .column-right {
   float: right;
-  left: -7%;
+  left: -7.5%;
 }
 
 .row-1 {
@@ -183,11 +200,42 @@ p {
   .frame-2-text {
     display: none;
   }
+
+  .frame-2-short-text {
+    display: block;
+  }
+
+  .frame-2-short-text-2 {
+    display: block;
+  }
+
+  .frame-2 {
+    height: 892px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-img {
+    margin-top: 5%;
+    height: 85%;
+  }
+  .frame-1-text {
+    margin-top: -431px;
+  }
 }
 
 @media screen and (max-width: 496px) {
   .menu-dropdown {
     top: 8px;
+  }
+  .frame-1-text {
+    width: 80%;
+    margin: -391px 10%;
+  }
+
+  .main-img {
+    margin-top: 100px;
+    height: 400px;
   }
 }
 
@@ -211,5 +259,10 @@ p {
   .menu-dropdown {
     top: -26px;
     left: 0;
+  }
+
+  .main-img {
+    margin-top: 100px;
+    height: 400px;
   }
 }
