@@ -192,6 +192,32 @@ p {
   background-color: #3093bd;
 }
 
+.about {
+  position: relative;
+  height: 80%;
+  width: 76%;
+  padding: 50px 12% 0;
+  overflow: hidden;
+  max-width: 685px;
+  margin: 0 auto;
+  min-height: 450px;
+}
+
+.about-text {
+  float: left;
+  width: 80%;
+  min-width: 260px;
+  max-width: 300px;
+  height: 250px;
+  margin-right: 40%;
+}
+
+.about-pic {
+  float: right;
+  width: 243px;
+  height: 303px;
+}
+
 @media screen and (max-width: 827px) {
   .content-wrapper {
     width: 391px;
@@ -207,6 +233,7 @@ p {
 
   .frame-2-short-text-2 {
     display: block;
+    margin-bottom: 0;
   }
 
   .frame-2 {
@@ -264,5 +291,9 @@ p {
   .main-img {
     margin-top: 100px;
     height: 400px;
+  }
+
+  .about-pic {
+    float: left;
   }
 }
